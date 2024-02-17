@@ -4,11 +4,13 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Entity
-@Table(name="fruit", schema="fsweb")
+@Table(name="fruits", schema="fsweb")
 public class Fruit extends Food {
 
     @NotNull

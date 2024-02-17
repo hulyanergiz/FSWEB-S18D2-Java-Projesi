@@ -23,6 +23,5 @@ public class Food {
 
     @DecimalMin(value="1",message = "Price can be at least 1")
     @NotNull(message = "Price cannot be null")
-    @NotBlank(message = "Price field cannot be blank")
     private Double price;
 }
